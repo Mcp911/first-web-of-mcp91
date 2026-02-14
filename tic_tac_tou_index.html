@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="tic_tac_tou.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>Tic-Tac-Toe</h1>
+        <div id="board" class="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <h2 id="status">Player X's Turn</h2>
+        <button id="resetBtn">Restart Game</button>
+    </div>
+    
+
+    <script src="tic_tac_tou.js"></script>
+    <audio id="move-sound" src="https://www.fesliyanstudios.com/play-mp3/4005"></audio>
+<audio id="win-sound" src="https://www.fesliyanstudios.com/play-mp3/387"></audio>
+<audio id="draw-sound" src="https://www.fesliyanstudios.com/play-mp3/5454"></audio>
+
+</body>
+</html>

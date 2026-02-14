@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake Game - Mahesh Edition</title>
+    <link rel="stylesheet" href="snake.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Snake Game</h1>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <h2 id="score">Score: 0</h2>
+        <div class="controls">
+    <button onclick="changeDir('UP')">🔼</button>
+    <div class="side-btns">
+        <button onclick="changeDir('LEFT')">◀️</button>
+        <button onclick="changeDir('RIGHT')">▶️</button>
+    </div>
+    <button onclick="changeDir('DOWN')">🔽</button>
+</div>
+
+<div class="speed-control">
+    <label>Speed: </label>
+    <button onclick="updateSpeed(150)">Slow</button>
+    <button onclick="updateSpeed(100)">Medium</button>
+    <button onclick="updateSpeed(60)">Fast</button>
+</div>
+        <button onclick="location.reload()">Restart</button>
+    </div>
+    <script src="snake.js"></script>
+    <audio id="eat-sound" src="https://www.fesliyanstudios.com/play-mp3/5450"></audio>
+<audio id="hit-sound" src="https://www.fesliyanstudios.com/play-mp3/5623"></audio>
+</body>
+</html>

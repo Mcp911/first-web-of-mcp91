@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="rock.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Rock Paper Scissors</h1>
+        <div class="choices">
+            <button onclick="playGame('rock')">✊ Rock</button>
+            <button onclick="playGame('paper')">✋ Paper</button>
+            <button onclick="playGame('scissors')">✌️ Scissors</button>
+        </div>
+        <div class="result-box">
+            <p id="user-choice">Your Choice: -</p>
+            <p id="comp-choice">Computer's Choice: -</p>
+            <h2 id="winner-text">Choose your move!</h2>
+        </div>
+        <div class="score">
+            <p>Score - You: <span id="user-score">0</span> | Computer: <span id="comp-score">0</span></p>
+        </div>
+        <button id="reset" onclick="resetGame()">Reset Game</button>
+    </div>
+    <script src="rock.js"></script>
+    <audio id="win-sound" src="https://www.fesliyanstudios.com/play-mp3/387"></audio>
+<audio id="lose-sound" src="https://www.fesliyanstudios.com/play-mp3/5623"></audio>
+<audio id="tie-sound" src="https://www.fesliyanstudios.com/play-mp3/5454"></audio>
+</body>
+</html>
+
